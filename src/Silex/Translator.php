@@ -27,7 +27,7 @@ class Translator extends BaseTranslator
     {
         $this->app = $app;
 
-        parent::__construct(null, $selector);
+        parent::__construct($app['locale'], $selector);
     }
 
     public function getLocale()
